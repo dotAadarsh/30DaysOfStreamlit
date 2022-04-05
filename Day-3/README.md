@@ -35,4 +35,4 @@ else:
 
 ## Result
 
-![day3](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-1.PNG)
+![day3](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-3.PNG)
