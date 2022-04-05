@@ -1,5 +1,4 @@
-# 30DaysOfStreamlit
-Initiative to learn Streamlit
+# 30DaysOfStreamlit | Day-1
 
 ## Setup Streamlit
 
