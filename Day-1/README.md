@@ -9,4 +9,4 @@ Initiative to learn Streamlit
 
 ## Result
 
-![day1](/workspace/30DaysOfStreamlit/asserts/Day-1.PNG)
+![day1](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-1.PNG)
