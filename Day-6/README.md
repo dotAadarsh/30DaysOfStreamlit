@@ -8,4 +8,4 @@
 
 ## Result	
 
-![day6](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-5.PNG)
+![day6](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-6.PNG)
