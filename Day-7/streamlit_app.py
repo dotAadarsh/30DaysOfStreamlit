@@ -1,0 +1,1 @@
+st.write('App hosted in streamlit cloud')
