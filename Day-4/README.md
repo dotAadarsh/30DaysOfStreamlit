@@ -8,4 +8,4 @@ Data Science Portfolio Project From Scratch | Building a YouTube Data Dashboard 
 
 ## Result
 
-![day2](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-2.PNG)
+![day4](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-4.png)
