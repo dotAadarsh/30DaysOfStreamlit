@@ -30,4 +30,4 @@ st.code(code, language = 'c')
 
   
 
-![day5](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-3.PNG)
+![day5](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-5.PNG)
