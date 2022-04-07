@@ -12,4 +12,4 @@
 3.  Click Deploy
 ## Result
 
-![day7](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-6.PNG)
+![day7](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-7.PNG)
