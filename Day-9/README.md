@@ -14,4 +14,4 @@
 
 ### Result
 
-![day9](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-8.PNG)
+![day9](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-9.png)
