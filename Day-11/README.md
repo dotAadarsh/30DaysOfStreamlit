@@ -23,4 +23,4 @@ options = st.multiselect(
 ```
 ## Result
 
-![day11](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-11.png)
+![day11](https://github.com/dotaadarsh/30DaysOfStreamlit/blob/main/asserts/Day-11.PNG)
