@@ -1,3 +1,8 @@
 
 tasks:
-  - init: pip install -r requirements.txt
+  - before: pip install -r requirements.txt
+
+ports:
+  - port: 8501
+    visibility: private
+    onOpen: open-browser
