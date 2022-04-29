@@ -6,7 +6,7 @@ from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sy
 st.set_page_config(layout="wide")
 
 with st.sidebar:
-    st.title("🗓️ #30DaysOfStreamlit")
+    st.title("#30DaysOfStreamlit")
     st.header("Day 27 - Streamlit Elements")
     st.write("Build a draggable and resizable dashboard with Streamlit Elements.")
     st.write("---")
