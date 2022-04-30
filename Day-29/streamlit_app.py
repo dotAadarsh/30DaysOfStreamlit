@@ -31,7 +31,11 @@ with st.sidebar:
         menu_icon="",
         default_index=0,
     )
-
+    with st.expander("About the app", expanded=True):
+        st.write("This app is a part of #30DaysOfStreamlit Challenge - Day-29")
+        st.markdown("[How to create a zero-shot learning text classifier using Hugging Face & Streamlit!](https://www.charlywargnier.com/post/how-to-create-a-zero-shot-learning-text-classifier-using-hugging-face-and-streamlit)")
+        st.write("Thanks to [Charly Wargnier](https://twitter.com/DataChaz) for creating this wonderful tutorial")
+        
 def main():
     st.caption("")
 
@@ -132,7 +136,6 @@ if selected == "Demo (5 phrases max)":
             response = requests.post(API_URL, headers=headers, json=payload)
             # Unhash to check status codes from the API response
             # st.write(response.status_code)
-            st.sidebar.json(query)
 
             return response.json()
 
