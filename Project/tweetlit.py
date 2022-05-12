@@ -7,6 +7,7 @@ import streamlit.components.v1 as components
 import random
 from streamlit_option_menu import option_menu
 from datetime import datetime , timedelta
+import sys
 
 bearer_token = st.secrets["bearer_token"]
 with st.sidebar:
@@ -53,7 +54,7 @@ if selected == 'Home':
 
     st.title("#Tweetlit")
 
-    input = st.text_input("Enter your query", value = "#30DaysOfStreamlit")
+    input = st.text_input("Enter your query", value = "#streamlit")
 
     def theTweets(tweets_url):
         api =f'https://publish.twitter.com/oembed?url={tweets_url}&theme=dark'
@@ -65,23 +66,34 @@ if selected == 'Home':
         search_url = "https://api.twitter.com/2/tweets/search/recent"
         query_params_tweets = {'query': f'{input}','tweet.fields': 'author_id', 'max_results': 50}
         json_response = connect_to_endpoint(search_url, query_params_tweets)
+        
 
         col1, col2 = st.columns(2)
         with col1:
             for i in range(0,20):
-                author_id = json_response["data"][i]["author_id"]
-                tweet_id = json_response["data"][i]["id"]
-                url = f'https://twitter.com/{author_id}/status/{tweet_id}'
-                res = theTweets(url)
-                components.html(res, height = 600)
+                try:
+                    author_id = json_response["data"][i]["author_id"]
+                    tweet_id = json_response["data"][i]["id"]
+                    url = f'https://twitter.com/{author_id}/status/{tweet_id}'
+                    res = theTweets(url)
+                    components.html(res, height = 600)
+                except:
+                    st.error(f"oops! Error logged! {sys.exc_info()[0]}")
+                    st.info("Try searching different Hashtags")
+                    break    
                 
         with col2:
             for i in range(20,40):
-                author_id = json_response["data"][i]["author_id"]
-                tweet_id = json_response["data"][i]["id"]
-                url = f'https://twitter.com/{author_id}/status/{tweet_id}'
-                res = theTweets(url)
-                components.html(res, height=600)
+                try:
+                    author_id = json_response["data"][i]["author_id"]
+                    tweet_id = json_response["data"][i]["id"]
+                    url = f'https://twitter.com/{author_id}/status/{tweet_id}'
+                    res = theTweets(url)
+                    components.html(res, height=600)
+                except:
+                    st.error(f"oops! Error logged! {sys.exc_info()[0]}")
+                    st.info("Try searching different Hashtags")
+                    break    
 
     def count():
         my_date = datetime.now() - timedelta(days=0, hours=0, minutes=5)
@@ -101,7 +113,7 @@ if selected == 'Home':
 
 if selected == 'Search Tweet':
     st.title("#Search Tweets")
-    input_tweet = st.text_input("Enter your query", value = "#30DaysOfStreamlit")
+    input_tweet = st.text_input("Enter your query", value = "#Streamlit")
 
     search_url = "https://api.twitter.com/2/tweets/search/recent"
     query_params = {'query': f'{input_tweet}','tweet.fields': 'author_id', 'max_results': 10}
@@ -116,7 +128,7 @@ if selected == 'Search Tweet':
 
         col1, col2 = st.columns(2)
         with col1:
-            n = random.randint(0,9)
+            n = 1
             author_id = json_response["data"][n]["author_id"]
             tweet_id = json_response["data"][n]["id"]
             url = f'https://twitter.com/{author_id}/status/{tweet_id}'
@@ -144,7 +156,7 @@ if selected == 'Search Tweet':
 
 if selected == 'Total tweet count':
     st.title("#Tweet counts")
-    input = st.text_input("Enter your query", value = "#30DaysOfStreamlit")
+    input = st.text_input("Enter your query", value = "#Streamlit")
 
     def count():
         my_date = datetime.now() - timedelta(days=0, hours=0, minutes=5)
