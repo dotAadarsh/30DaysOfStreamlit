@@ -21,7 +21,7 @@ yt_url = st.text_input('Paste Youtube URL', 'https://youtu.be/R2nr1uZ8ffc')
 def get_ytid(input_url):
     if 'youtu.be' in input_url:
         ytid = input_url.split('/')[-1]
-    if 'youtube.com' in input_url:
+    if 'https://www.youtube.com/watch?v=' in input_url:
         ytid = input_url.split('=')[-1]
     return ytid
 
