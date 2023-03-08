@@ -47,7 +47,7 @@ importlib-resources==5.6.0
 inflection==0.5.1
 intervaltree==3.1.0
 ipykernel==6.11.0
-ipython==7.32.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 ipywidgets==7.7.0
 isort==5.10.1
