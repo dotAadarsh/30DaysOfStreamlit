@@ -1,4 +1,4 @@
-streamlit==1.11.1
+streamlit==1.27.0
 streamlit-option-menu==0.3.2
 mistune>=2.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
 numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
