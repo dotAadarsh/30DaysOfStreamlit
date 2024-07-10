@@ -175,5 +175,5 @@ webencodings==0.5.1
 widgetsnbextension==3.6.0
 wrapt==1.14.0
 yapf==0.32.0
-zipp==3.7.0
+zipp==3.19.1
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
